@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực Hành: Sự kiện chuột</title>
+</head>
+<body>
+<form>
+    <img src="https://cdn.shopify.com/s/files/1/0367/6903/8381/products/preview-83_40337edb-1421-4790-b38d-4734c884e64f_2000x.jpg?v=1666482042"
+         alt="Failed" width="30%" id="img">
+    <p> Click button below to move the image to right</p> <br>
+    <input type="button" value="Click Me" onclick="move()">
+</form>
+<script>
+    // let img = null;
+    // img = document.getElementById('img');
+    // function init() {
+    //     img = document.getElementById('img').value;
+    //     img.style.position = "relative";
+    //     console.log(img.style.position)
+    //     img.style.left = '0px';
+    // }
+    // function move(){
+    //     // img.style.left = + img.style.left + 10 +'px';
+    //     img.style.left = parseInt(img.style.left) + 10 +'px';
+    // }
+    // window.onload = init;
+    let img = null;
+    img = document.getElementById('img');
+
+    function init() {
+        img = document.getElementById('img');
+        img.style.position = 'relative';
+        console.log(img.style.position)
+        img.style.left = '0px';
+    }
+    function move() {
+        img.style.left = parseInt(img.style.left) + 10 + 'px';
+        console.log(img.style.left)
+    }
+    window.onload = init;
+
+</script>
+</body>
+</html>
